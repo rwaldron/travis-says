@@ -1,6 +1,10 @@
+language: node_js
+node_js: 10
 env:
   global:
     - secure: "DqFRoOODJWfRAZA9gGDNwr4cur0JAhDBpGP04mF8yWRREVA+5vrj7uO7bZqG7tafljinUTQpF22fSg7J2DYDvRTdA41SuJNH++cdVKV06FpR1vfCUqcr4aYR4TlqWFM7nYVFF+voTO5O5K+4tIniTqvVrNuppIkFaoj7HlHa/BOngPSusxggVI7b2YAxey+J7XRBVIjLdSRtlHel2laEG8D9QIqXNn6K3PJm5qx6xpoxLyULv/DbVBA7C25ifDA62nXSYjkj+AVlTiQrYajNiZx0KowSvWtqfTXtD3RGGUiFa0JbAK/Nidxy06YkbOV6B6VIw5ihTOTmEZTbHF4VkGu7/bHKk6igAx7Mk92CA/cqfU/p8Ti9z4TvKJm1vTKDaMo+WhJ5cU7A/eseSpV7h4oPgz8w9ESzpOrMbnNaq5t0B0OnUvHJfkPQLPRRY3ZSeHArWj2/J59Yw5PiVcD76+8bdnxleN3bn4SKyyC0RPnhxUGzHxiqqS/f+QjETRR1b5uGHq2JCPpcAUZsFcpm9KX2rvT0JjXauZ4OTI7WZGSVhq+Eo1wAumyrlvt6XwZRMRI9wikdnN4yAV93AcXHwUo4Me0ZvsJ60QRfysKtYCFK+gTIaP/Z5kG8jKF5hsMTsLD4ktx96wrQqDbvZY0TGBrHapm8hK5X223tOQaMOY8="
 
+script:
+- echo "hello!"
 after_success:
-    - ./post-comment.sh
+- ./post-comment.sh
